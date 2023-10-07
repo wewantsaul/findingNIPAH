@@ -29,7 +29,7 @@ cd ~/findingNIPAH
 ```
 ### Step 1: Indexing
 ```
-nextflow run findingNIPAH --index \
+nextflow run findingNIPAH.nf --index \
 --ref_seq <path/to/reference_fasta.fna> \
 --index_dir <NAME_of_index_directory>
 ```
@@ -37,7 +37,7 @@ nextflow run findingNIPAH --index \
 * <NAME_of_index_directory>: Specify the name of the index directory (not the path)
 ### Step 2: Main Workflow
 ```
-nextflow run findingNIPAH --reads <path/to/fastq> \
+nextflow run findingNIPAH.nf --reads <path/to/fastq> \
 --out_dir <output_directory_NAME> \
 --index_folder <index_folder_NAME>
 ```
