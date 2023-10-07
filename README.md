@@ -18,8 +18,7 @@ git clone https://github.com/wewantsaul/findingNIPAH.git
 ```conda create -n nextflow-env``` \
 ```conda activate nextflow-env``` \
 ```conda install nextflow```
-* install docker \
-see [here](https://docs.docker.com/engine/install/)
+* install docker see [here](https://docs.docker.com/engine/install/)
 * get host genome
 
 ## Usage
