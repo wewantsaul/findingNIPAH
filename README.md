@@ -1,3 +1,5 @@
+
+![Image description](findingNIPAH/assets/findingNIPAH.png)
 # findingNIPAH
 The findingNIPAH pipeline is a Nextflow-based tool designed for detecting the NIPAH virus in animal samples, such as bat urine and feces, from Illumina paired-end metagenomic sequencing data.
 
