@@ -1,5 +1,5 @@
 # findingNIPAH
-The findingNIPAH pipeline is a Nextflow-based tool designed for detecting the NIPAH virus in animal samples, such as bat urine and feces, using Illumina paired-end metagenomic sequencing data.
+The findingNIPAH pipeline is a Nextflow-based tool designed for detecting the NIPAH virus in animal samples, such as bat urine and feces, from Illumina paired-end metagenomic sequencing data.
 
 ## Pipeline details
 Host genome indexing. \
@@ -18,8 +18,7 @@ git clone https://github.com/wewantsaul/findingNIPAH.git
 ```conda create -n nextflow-env``` \
 ```conda activate nextflow-env``` \
 ```conda install nextflow```
-* install docker \
-see [here](https://docs.docker.com/engine/install/)
+* install docker see [here](https://docs.docker.com/engine/install/)
 * get host genome
 
 ## Usage
@@ -29,7 +28,7 @@ cd ~/findingNIPAH
 ```
 ### Step 1: Indexing
 ```
-nextflow run findingNIPAH --index \
+nextflow run findingNIPAH.nf --index \
 --ref_seq <path/to/reference_fasta.fna> \
 --index_dir <NAME_of_index_directory>
 ```
@@ -37,7 +36,7 @@ nextflow run findingNIPAH --index \
 * <NAME_of_index_directory>: Specify the name of the index directory (not the path)
 ### Step 2: Main Workflow
 ```
-nextflow run findingNIPAH --reads <path/to/fastq> \
+nextflow run findingNIPAH.nf --reads <path/to/fastq> \
 --out_dir <output_directory_NAME> \
 --index_folder <index_folder_NAME>
 ```
